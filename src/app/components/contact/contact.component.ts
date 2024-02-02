@@ -35,9 +35,12 @@ export class ContactComponent implements OnInit {
     formControls.forEach(formControl => formControl.markAsTouched());
 
     if (this.contactAsForm.valid) {
-      const formData = this.contactAsForm.value;
+       var formData = this.contactAsForm.value;
+      if(formData.phone == undefined || formData.phone == null){
+        formData.phone = 0;
+      }
 
-      const apiUrl = 'https://https://hauo17o7y6.execute-api.us-east-1.amazonaws.com/V1/sendMessage';
+      const apiUrl = 'https://k4g542ghuc.execute-api.us-east-1.amazonaws.com/v1/contact';
 
       this.httpClient.post(apiUrl, formData).subscribe(
         (response) => {
