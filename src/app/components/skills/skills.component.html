@@ -1,0 +1,17 @@
+<section id="skills" class="resume">
+  <div class="container">
+    <div class="section-title">
+      <h2>Skills</h2>
+    </div>
+    <div class="container d-flex justify-content-end"></div>
+    <div class="resume-item pb-0 skill">
+      <ul id="skill-list">
+        <li
+          *ngFor="let skill of skills"
+          [innerHTML]="skill"
+          style="list-style-type: none"
+        ></li>
+      </ul>
+    </div>
+  </div>
+</section>

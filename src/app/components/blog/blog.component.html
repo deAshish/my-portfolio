@@ -1,0 +1,22 @@
+<section id="blog" class="resume">
+  <div class="container">
+    <div class="section-title">
+      <h2>Blog</h2>
+    </div>
+    <div class="resume-item">
+      <div class="blog-post">
+        <h2>{{ post.title }}</h2>
+        <img src="../../../assets/img/blog.jpg" />
+        <p>{{ post.excerpt }}</p>
+        <a
+          [href]="post.url"
+          target="_blank"
+          class="read-more"
+          (click)="openPost(post.url)"
+        >
+          Read More
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,17 @@
+.typed {
+  position: relative; /* Ensure proper positioning of ::after pseudo-element */
+}
+
+.typed-text {
+  overflow: hidden; /* Hide overflow text */
+  white-space: nowrap; /* Prevent line breaks */
+  width: 0; /* Start with zero width */
+  animation: typing 5s steps(40) infinite; /* Duration and steps */
+  font-style: italic;
+}
+
+@keyframes typing {
+  to {
+    width: 50%;
+  }
+}

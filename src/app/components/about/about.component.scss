@@ -1,0 +1,20 @@
+#about {
+  margin-left: 250px;
+  background-color: rgb(196, 212, 226);
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.beat-animation {
+  animation: beat 2s infinite alternate; /* Adjust duration and animation properties as needed */
+}

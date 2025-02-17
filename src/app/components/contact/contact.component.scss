@@ -1,0 +1,57 @@
+#contact {
+  margin-left: 250px;
+  background-color: rgb(189, 199, 207);
+}
+
+#contact.row {
+  background-color: rgb(189, 199, 207);
+}
+
+img {
+  width: 320px;
+  height: auto;
+}
+
+.error {
+  color: red;
+}
+
+.gray {
+  color: gray;
+  border-color: gray;
+}
+
+#successBanner {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  margin: 10px;
+}
+
+#successBanner i {
+  font-size: 2rem;
+  vertical-align: middle;
+}
+
+#bannerMessage {
+  font-size: 1.2rem;
+  margin-left: 10px;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.beat-animation {
+  animation: beat 1s infinite alternate; /* Adjust duration and animation properties as needed */
+}
