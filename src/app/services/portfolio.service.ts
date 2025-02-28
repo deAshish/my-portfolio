@@ -131,6 +131,12 @@ export interface Project {
 }
 
 const project: Project[] = [
+  {
+    title: "Audio to Text Convertor",
+    description: "The Audio-to-Text Converter is a web-based application that allows users to upload audio files and convert them into text using OpenAI's Whisper API. The frontend is built with React and handles API requests via Axios.",
+    projectUrl: "https://github.com/deAshish/Audio-Text",
+    technologies: [ "Spring Boot","Spring Ai","OpenAI Whisper API", "React", "lombok" ]
+  },
 
   {
     title: "AI Email Assistance",
