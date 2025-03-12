@@ -132,10 +132,22 @@ export interface Project {
 
 const project: Project[] = [
   {
+    title: "Research Assistant Extension",
+    description: "Research Assistant Extension is a Chrome extension designed to enhance research productivity by providing AI-powered assistance. This project is built using a Spring Boot backend integrated with the Gemini AI API for natural language processing, and a React-based user interface for seamless user interaction.",
+    projectUrl: "https://github.com/deAshish/Research-Assistant-Extension",
+    technologies: [ "Spring Boot","Spring Ai","WebClient","Gemini AI API", "Jackson", "React", "Manifest V3" ]
+  },
+  {
+    title: "AI Modules",
+    description: "This project is build using springAI with AI services like ChatService, Image Service and Recipe Generator service. The frontend is build using React which provides an interface for user to use those services.",
+    projectUrl: "https://github.com/deAshish/SpringAiI",
+    technologies: [ "Spring Boot","Spring AI","OpenAI API","WebClient", "React"]
+  },
+  {
     title: "Audio to Text Convertor",
     description: "The Audio-to-Text Converter is a web-based application that allows users to upload audio files and convert them into text using OpenAI's Whisper API. The frontend is built with React and handles API requests via Axios.",
     projectUrl: "https://github.com/deAshish/Audio-Text",
-    technologies: [ "Spring Boot","Spring Ai","OpenAI Whisper API", "React", "lombok" ]
+    technologies: [ "Spring Boot","Spring AI","OpenAI Whisper API", "React", "lombok" ]
   },
 
   {
