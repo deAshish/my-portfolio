@@ -24,6 +24,9 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Clean Old Deployment
+        run: rm -rf dist/my_portfolio/*
+
       - name: Build the Angular app
         run: npm run build -- --configuration=production
 
