@@ -28,7 +28,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build-files
-          path: dist/my_portfolio/
+          path: dist/-portfolio/
 
   deploy:
     runs-on: ubuntu-latest
@@ -39,10 +39,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-files
-          path: dist/my_portfolio/
+          path: dist/my-portfolio/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.PAT_TOKEN }}
-          publish_dir: ./dist/my_portfolio
+          publish_dir: ./dist/my-portfolio
+          keep_files: false
+          force_orphan: true

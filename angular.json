@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my_portfolio",
+            "outputPath": "dist/my-portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -33,7 +33,7 @@
               "src/styles.scss"
             ],
             "scripts": [],
-            "baseHref": "/my_portfolio/"
+            "baseHref": "/my-portfolio/"
           },
           "configurations": {
             "production": {
