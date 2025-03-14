@@ -24,17 +24,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Clean Old Deployment
-        run: rm -rf dist/my_portfolio/*
-
       - name: Build the Angular app
-        run: npm run build -- --configuration=production
+        run: npm run build -- --configuration=production --base-href "/my-portfolio"
 
       - name: Upload production-ready files
         uses: actions/upload-artifact@v4
         with:
           name: build-files
-          path: dist/
+          path: dist/my_portfolio
 
   deploy:
     runs-on: ubuntu-latest
@@ -45,7 +42,7 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: build-files
-          path: dist/
+          path: dist/my_portfolio
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
