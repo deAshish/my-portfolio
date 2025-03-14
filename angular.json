@@ -33,7 +33,7 @@
               "src/styles.scss"
             ],
             "scripts": [],
-            "baseHref": "/my_portfolio"
+            "baseHref": "/my_portfolio/"
           },
           "configurations": {
             "production": {
