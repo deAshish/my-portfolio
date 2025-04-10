@@ -11,7 +11,7 @@ export class AboutComponent {
   address: string = "Chicago Illonis, USA";
   degree: string = "Master";
   workStatus: string = " Open to Work";
-  sps: string = "Experienced Software Engineer with 5 years of expertise in web-based software development" +
+  sps: string = "Experienced Software Engineer with 3 years of expertise in web-based software development" +
                 ", automation, and enhancing business operations. Skilled in requirement analysis, quality" +
                 " assurance, project documentation, and enterprise architecture implementation. Proficient in" +
                 " Java, Spring Boot, and React for end-to-end software development.";
